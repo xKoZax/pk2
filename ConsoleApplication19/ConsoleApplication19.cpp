@@ -19,9 +19,11 @@ int main()
 	std::cout << std::endl;
 	read *p2 = new read();
 	std::cout << std::endl;
-	read* p3 = new read("33", "44");
+	read *p3 = new read("33", "44");
 	std::cout << std::endl;
-	read* p4 = new read("33", "44","55");
+	read *p4 = new read("33", "44","55");
+	std::cout << std::endl;
+	read p5(*p4);
 	return 0;
 }
 

@@ -37,9 +37,14 @@ public:
 		std::cout << "konstruktor wielo argumetowy zostal wywolany";
 	}
 	read(read& copy) {
-
+		ID = copy.ID;
+		seq = copy.seq;
+		quality = copy.quality;
+		std::cout<< "konstruktor kopiujacy zostal wywolany";
 	}
-	
+	~read() {
+		std::cout << "destruktor zostal wywolany";
+	}
 
 
 
